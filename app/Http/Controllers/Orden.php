@@ -22,7 +22,7 @@ class Orden extends Controller
 
                     
         
-        return Response::json(['name' => $query, 'state' => 'SA']);
+        return Response::json(['data' => $query]);
         
     }
 }
