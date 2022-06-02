@@ -18,3 +18,8 @@ Use App\Http\Controllers\Orden;
 Route::get('ordens/{customer_id}/{orden}', function($customer_id, $orden) {
     return Orden::show($customer_id,$orden);
 });
+
+Route::get('ordens/create', function() {
+    return Orden::insert();
+});
+

@@ -15,7 +15,7 @@ class CreateCustomersTable extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->bigIncrements('customer_id');
-            $table->string('name',25);
+            $table->string('name_customer',25);
             $table->string('user_id',25);
             $table->integer('type_user_id');
             $table->timestamps();
